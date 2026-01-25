@@ -7,3 +7,14 @@ We will learn:
 4. Android Components
 5. Developing Two Android Apps
 6. Publishing Apps on the Google Play Store
+
+## What is Jetpack Compose?
+1. It is a toolkit for building native UI.
+2. It simplifies and accelerates UI development with:
+    (a) Less code
+    (b) Powerful tools
+    (c) Intuitive Kotlin APIs
+
+3. With Jetpack Compose, we no longer need to design UI with XML. We create their views directly within the Kotlin class, just like we write code.
+   
+4. We use Jetpack compose because it allows us to write less code; it is intuitive; it accelerates the development process; it is powerful. 
