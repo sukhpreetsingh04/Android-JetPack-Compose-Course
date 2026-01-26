@@ -1,4 +1,14 @@
 # Android-JetPack-Compose-Course
+## What is Android Development?
+Android development is a software creation process that focuses on applications, better known as apps, that are compatible with devices running the Android operating system (OS).
+The Android SDK tools compile your code along with any data and resource files into an APK, or Android package, which is an archive file that uses an .apk suffix.
+One APK file contains all Android app contents used by devices to install your app. When the app is complete and ready for release, Android developers can upload their apps to the Google Play Store for users to download.
+
+## What is Android SDK and why is it important?
+1. Android SDK refers to the Android Software Development Kit.
+
+2. Android SDK is a collection of tools that have been released and supported for the express purpose of creating Android software. Through the Android SDK, programmers can collect, create, and manage their code. It is a comprehensive development environment that is well-supported, not only by the Android team but also by its community.
+
 ## What Will We Learn?
 We will learn:
 1. Kotlin Programming Language
