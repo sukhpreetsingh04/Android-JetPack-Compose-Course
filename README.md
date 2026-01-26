@@ -75,3 +75,8 @@ We will learn:
 5. Function or method: It is a block of codes that can be referenced by name to run the code it contains.
 
 6. Argument or parameter: It is a value that is passed into a command or a function.
+
+## JDK, JRE and JVM
+<img width="1573" height="925" alt="image" src="https://github.com/user-attachments/assets/cdc2c9e4-574f-4562-9c32-d47bdfd6bae7" />
+
+
