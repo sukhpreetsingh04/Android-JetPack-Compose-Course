@@ -1,15 +1,18 @@
 # Android-JetPack-Compose-Course
 ## What is Android Development?
+
 Android development is a software creation process that focuses on applications, better known as apps, that are compatible with devices running the Android operating system (OS).
 The Android SDK tools compile your code along with any data and resource files into an APK, or Android package, which is an archive file that uses an .apk suffix.
 One APK file contains all Android app contents used by devices to install your app. When the app is complete and ready for release, Android developers can upload their apps to the Google Play Store for users to download.
 
 ## What is Android SDK and why is it important?
+
 1. Android SDK refers to the Android Software Development Kit.
 
 2. Android SDK is a collection of tools that have been released and supported for the express purpose of creating Android software. Through the Android SDK, programmers can collect, create, and manage their code. It is a comprehensive development environment that is well-supported, not only by the Android team but also by its community.
 
 ## What Will We Learn?
+
 We will learn:
 1. Kotlin Programming Language
 2. Android Studio
@@ -19,6 +22,7 @@ We will learn:
 6. Publishing Apps on the Google Play Store
 
 ## What is Jetpack Compose?
+
 1. It is a toolkit for building native UI.
    
 2. It simplifies and accelerates UI development with:
@@ -31,6 +35,7 @@ We will learn:
 4. We use Jetpack compose because it allows us to write less code; it is intuitive; it accelerates the development process; it is powerful. 
 
 ## What is Kotlin?
+
 1. It is an Open-source and static language. It takes its name from Kotlin Island, a russain island in the Gulf of Finland.
 
 2. It supports both object-oriented and functional programming.
@@ -51,7 +56,7 @@ We will learn:
 
 2. You can easily convert between Kotlin and Java codes.
 
-3. There is also an autmatic Java-to-Kotlin converter built into Andriod Studio.
+3. There is also an autmatic Java-to-Kotlin converter built into Android Studio.
 
 ## By Using Kotlin:
 
@@ -59,11 +64,12 @@ We will learn:
 
 2. Faster compilation
 
-3. Much simpler and more undersrandlbe structure.
+3. Much simpler and more understandable structure.
 
 4. You can develop Web, Desktop and Android Applications wiith Kotlin.
 
 ## Basic Programming Terms
+
 1. Package: used to organize classes that belong to the same category or provide related functionality.
 
 2. Class: refers to set of related objects with common properties in object oriented programming
