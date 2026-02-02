@@ -85,4 +85,8 @@ We will learn:
 ## JDK, JRE and JVM
 <img width="1573" height="925" alt="image" src="https://github.com/user-attachments/assets/cdc2c9e4-574f-4562-9c32-d47bdfd6bae7" />
 
+## Components in JetPack Compose
 
+Components in JetPack Compose are:
+
+1. Layout : It is an interface that we use to place android components on the android application. We use layouts to establish components in a particular order. Basically three main layouts are: Column (Vertically aligns), Row (Horizonatally aligns) and Box (Top of one Another aligns).
