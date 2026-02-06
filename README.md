@@ -91,4 +91,71 @@ Components in JetPack Compose are:
 
 1. Layout : It is an interface that we use to place android components on the android application. We use layouts to establish components in a particular order. Basically three main layouts are: Column (Vertically aligns), Row (Horizonatally aligns) and Box (Top of one Another aligns).
    
-2. Arrangements and Alignments :  
+2. Arrangements:  Arrangement refers to how child elements are positioned and spaced inside a layout container along its main direction (horizontal in Row and vertical in Column). It controls how space is distributed between and around components.
+
+3. Alignments: Alignment refers to how child elements are placed relative to the cross direction of a layout container (vertical alignment in Row and horizontal alignment in Column). It controls how elements line up perpendicular to the main direction.
+
+### Alignments and Arrangments
+
+#### Row
+
+1. *horizontalArrangement* → controls spacing horizontally
+
+2. *verticalAlignment* → controls alignment vertically
+
+#### Column
+
+1. *verticalArrangement* → controls spacing vertically
+
+2. *horizontalAlignment* → controls alignment horizontally
+
+### Note: Row manages elements horizontally, so it uses horizontal arrangement and vertical alignment. Column manages elements vertically, so it uses vertical arrangement and horizontal alignment.
+
+## Row Layout Properties
+
+### horizontalArrangement (Main Direction → Horizontal) : Controls spacing between elements inside a Row.
+
+1. Arrangement.Start → Items placed at the beginning
+
+2. Arrangement.End → Items placed at the end
+
+3. Arrangement.Center → Items placed at the center
+
+4. Arrangement.SpaceBetween → Equal space between items, no space at ends
+
+5. Arrangement.SpaceAround → Equal space around items (edges get half space)
+
+6. Arrangement.SpaceEvenly → Equal space everywhere (including edges)
+
+### verticalAlignment (Cross Direction → Vertical) : Controls vertical alignment of items inside a Row.
+
+1. Alignment.Top → Align items to top
+
+2. Alignment.CenterVertically → Align items in vertical center
+
+3. Alignment.Bottom → Align items to bottom
+
+## Column Layout Properties
+
+### verticalArrangement (Main Direction → Vertical) : Controls spacing between elements inside a Column.
+
+1. Arrangement.Top → Items placed at the top
+
+2. Arrangement.Bottom → Items placed at the bottom
+
+3. Arrangement.Center → Items placed at the center
+
+4. Arrangement.SpaceBetween → Equal space between items
+
+5. Arrangement.SpaceAround → Equal space around items
+
+6. Arrangement.SpaceEvenly → Equal space everywhere
+
+
+### horizontalAlignment (Cross Direction → Horizontal) : Controls horizontal alignment of items inside a Column.
+
+1. Alignment.Start → Align items to left/start
+
+2. Alignment.CenterHorizontally → Align items in horizontal center
+
+3. Alignment.End → Align items to right/end
