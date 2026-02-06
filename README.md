@@ -165,3 +165,69 @@ Components in JetPack Compose are:
 
 For leaving the desired distance between components, we use a composable function called *spacer*.
 A Spacer is a structure we use to keep distance between components.
+`Spacer` is used to create empty space between UI components inside layouts like `Row`, `Column`, or `Box`.
+
+### Syntax
+```kotlin
+Spacer(modifier = Modifier.size(16.dp))
+```
+
+### Spacer in a Row (Horizontal Row)
+
+```kotlin
+Row {
+    Text("Item 1")
+    
+    Spacer(modifier = Modifier.width(16.dp))
+    
+    Text("Item 2")
+}
+```
+
+Adds horizontal space between components.
+
+### Spacer in Column (Vertical Space)
+
+```kotlin
+Column {
+    Text("Item 1")
+    
+    Spacer(modifier = Modifier.height(16.dp))
+    
+    Text("Item 2")
+}
+```
+
+Adds vertical space between components.
+
+### Spacer Using Weight (Flexible Space)
+
+```kotlin
+Row(modifier = Modifier.fillMaxWidth()) {
+    Text("Start")
+    
+    Spacer(modifier = Modifier.weight(1f))
+    
+    Text("End")
+}
+```
+
+Pushes elements apart by taking remaining space.
+
+### Common Modifier Options
+
+1. Modifier.width() → Controls horizontal spacing
+
+2. Modifier.height() → Controls vertical spacing
+
+3. Modifier.size() → Controls both width and height
+
+4. Modifier.weight() → Takes flexible or remaining space
+
+### When to Use Spacer
+
+1. To add fixed or flexible gaps between UI elements
+
+2. To control layout spacing without using padding
+
+3. To push elements apart dynamically
