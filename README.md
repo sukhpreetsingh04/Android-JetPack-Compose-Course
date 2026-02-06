@@ -159,3 +159,9 @@ Components in JetPack Compose are:
 2. Alignment.CenterHorizontally → Align items in horizontal center
 
 3. Alignment.End → Align items to right/end
+
+
+## Spacer : What should we do if we want to leave the desired distance between components?
+
+For leaving the desired distance between components, we use a composable function called *spacer*.
+A Spacer is a structure we use to keep distance between components.
