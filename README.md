@@ -231,3 +231,143 @@ Pushes elements apart by taking remaining space.
 2. To control layout spacing without using padding
 
 3. To push elements apart dynamically
+
+### Button
+
+1. Button is an android component.
+   
+2. When you click on button, it will do some specific operations.
+
+3. A Button in Jetpack Compose is a clickable UI component used to trigger actions such as submitting data, navigating screens, or performing operations when pressed.
+
+```kotlin
+Button(
+    onClick = { /* Action to perform */ }
+) {
+    Text("Click Me")
+}
+```
+
+### Button Properties in Jetpack Compose
+
+### onClick (Required)
+Defines the action performed when the button is clicked.
+
+```kotlin
+onClick = { /* Action */ }
+```
+
+- Mandatory property  
+- Accepts a lambda function  
+- Used for navigation, function calls, API calls, etc.
+
+---
+
+### modifier
+Used to control layout, styling, and positioning.
+
+```kotlin
+modifier = Modifier
+    .fillMaxWidth()
+    .padding(8.dp)
+```
+
+#### Common Uses:
+- `padding()` → Adds spacing  
+- `fillMaxWidth()` → Expands width  
+- `size()` → Sets fixed size  
+- `align()` → Aligns inside parent  
+- `background()` → Adds background styling  
+
+---
+
+### colors
+Customizes button appearance.
+
+```kotlin
+colors = ButtonDefaults.buttonColors(
+    containerColor = Color.Blue,
+    contentColor = Color.White
+)
+```
+
+#### Parameters:
+- `containerColor` → Background color  
+- `contentColor` → Text/Icon color  
+- `disabledContainerColor` → Background when disabled  
+- `disabledContentColor` → Content when disabled  
+
+---
+
+### enabled
+Controls whether the button is clickable.
+
+```kotlin
+enabled = true
+```
+
+- `true` → Button is active  
+- `false` → Button is disabled  
+
+---
+
+### shape
+Defines the corner style of the button.
+
+```kotlin
+shape = RoundedCornerShape(12.dp)
+```
+
+#### Common Shapes:
+- `RoundedCornerShape`
+- `CircleShape`
+- `CutCornerShape`
+
+---
+
+### elevation
+Controls shadow depth.
+
+```kotlin
+elevation = ButtonDefaults.buttonElevation(
+    defaultElevation = 6.dp
+)
+```
+
+---
+
+### border
+Adds border around the button.
+
+```kotlin
+border = BorderStroke(2.dp, Color.Black)
+```
+
+---
+
+### interactionSource
+Tracks interaction states like press, hover, and focus.
+
+```kotlin
+interactionSource = remember { MutableInteractionSource() }
+```
+
+*(Used in advanced UI handling)*
+
+---
+
+### content
+Defines UI elements placed inside the button.
+
+```kotlin
+Button(onClick = {}) {
+    Text("Click Me")
+}
+```
+
+#### Content Can Include:
+- Text  
+- Icons  
+- Combined layouts (Row, Column, etc.)
+
+---
