@@ -371,3 +371,85 @@ Button(onClick = {}) {
 - Combined layouts (Row, Column, etc.)
 
 ---
+
+### Text Field
+A **Text Field** in Android is a UI component used to accept text input from the user.  
+In Android, it is mainly implemented using **EditText**.
+
+ 1. State Management
+
+### remember { mutableStateOf("") }
+
+- `remember` stores the value during recomposition.
+- `mutableStateOf("")` creates a mutable state that triggers recomposition when changed.
+- Used to store the current text of the TextField.
+
+Example:
+```kotlin
+val valueOnTextField = remember {
+    mutableStateOf("")
+}
+```
+
+2. value
+- Represents the current text displayed inside the TextField.
+- Must be linked with a state variable.
+- When state changes, UI updates automatically.
+
+Example:
+```kotlin
+value = valueOnTextField.value
+```
+
+3. onValueChange
+- Triggered whenever the user types something.
+- `it` contains the new text.
+- Used to update the state.
+  
+Example:
+```kotlin
+onValueChange = {
+    valueOnTextField.value = it
+}
+```
+
+4. label
+- Displays a floating label inside the TextField.
+- Moves upward when user starts typing.
+
+Example:
+```kotlin
+label = { Text(text = "Enter your name") }
+```
+
+5. modifier
+- Used to modify layout, size, padding, etc.
+- Here, it sets the width to 300dp.
+- Common modifiers:
+1. width()
+2. height()
+3. padding()
+4. fillMaxWidth()
+
+Example:
+```kotlin
+modifier = Modifier.width(300.dp)
+```
+
+6. colors
+- Customizes the color scheme of TextField. 
+- TextField Properties
+
+| Property                | Description                        |
+| ----------------------- | ---------------------------------- |
+| `textColor`             | Color of typed text                |
+| `backgroundColor`       | Background color of TextField      |
+| `focusedLabelColor`     | Label color when focused           |
+| `unfocusedLabelColor`   | Label color when not focused       |
+| `unfocusedIndicatorColor` | Bottom line color when not focused |
+| `focusedIndicatorColor` | Bottom line color when focused     |
+
+Example:
+```kotlin
+colors = TextFieldDefaults.textFieldColors(...)
+```
