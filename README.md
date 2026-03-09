@@ -453,3 +453,150 @@ Example:
 ```kotlin
 colors = TextFieldDefaults.textFieldColors(...)
 ```
+
+### Images
+Images are displayed using the Image() composable.
+It is used to show images from:
+1. Drawable resources
+2. Bitmap
+3. Painter Objects
+4. URLs (using libraties like Coil)
+
+#### Syntax
+```kotlin
+Image(
+    painter = painterResource(id = R.drawable.image_name),
+    contentDescription = "Image description"
+)
+```
+
+1. Loading Image from Drawable:
+To display images stored in res/drawable.
+
+```kotlin
+Image(
+    painter = painterResource(id = R.drawable.one),
+    contentDescription = "Sample Image"
+)
+```
+
+painterResource() loads image from drawable folder
+contentDescription is used for accessibility
+
+2. Image Size:
+We can control the image size using Modifier.
+
+```kotlin
+Image(
+    painter = painterResource(id = R.drawable.one),
+    contentDescription = "Image",
+    modifier = Modifier.size(200.dp)
+)
+```
+
+3. Content Scale:
+conetentScale controls how the image fits inside its container.
+
+example:
+```kotlin
+contentScale = ContentScale.Fit
+```
+
+## ContentScale Options
+
+| Type                      | Description                                  |
+| ------------------------- | -------------------------------------------- |
+| `ContentScale.Fit`        | Image fits inside container without cropping |
+| `ContentScale.Crop`       | Image fills container and crops extra part   |
+| `ContentScale.FillBounds` | Image stretches to fill container            |
+| `ContentScale.Inside`     | Keeps original size if smaller               |
+| `ContentScale.FillWidth`  | Fill width only                              |
+| `ContentScale.FillHeight` | Fill height only                             |
+
+4. Image Alignment:
+Controls position of image inside container.
+
+example:
+```kotlin
+alignment = Alignment.center
+```
+
+Other Alignments:
+
+(a) Alignment.TopStart
+
+(b) Alignment.TopCenter
+
+(c) Alignment.TopEnd
+
+(d) Alignment.CenterStart
+
+(e) Alignment.Center
+
+(f) Alignment.CenterEnd
+
+(g) Alignment.BottomStart
+
+(h) Alignment.BottomCenter
+
+(i) Alignment.BottomEnd
+
+
+5. Changing Image Dynamically:
+We can change images using state variables.
+
+```kotlin
+val myImage = remember {
+    mutableStateOf(R.drawable.Imageone)
+}
+```
+
+Change image on button click:
+
+```kotlin
+myImage.value = R.drawable.images
+```
+
+6. Image with Modifier Examples
+
+  (a) Rounded Image
+
+```kotlin
+modifier = Modifier
+    .size(200.dp)
+    .clip(CircleShape)
+```
+
+  (b) Border Image
+
+```kotlin
+modifier = Modifier
+    .border(2.dp, Color.Black)
+```
+
+  (c) Padding
+
+```kotlin
+modifier = Modifier.padding(16.dp)
+```
+
+7. Image with Bitmap
+
+```kotlin
+Image(
+    bitmap = imageBitmap,
+    contentDescription = "Bitmap Image"
+)
+```
+
+8. Important Parameters of Image()
+
+| Parameter            | Purpose                   |
+| -------------------- | ------------------------- |
+| `painter`            | Image source              |
+| `contentDescription` | Accessibility description |
+| `modifier`           | Size, padding, styling    |
+| `contentScale`       | Image scaling             |
+| `alignment`          | Image alignment           |
+| `alpha`              | Image transparency        |
+| `colorFilter`        | Apply color effect        |
