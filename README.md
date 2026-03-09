@@ -502,7 +502,7 @@ example:
 contentScale = ContentScale.Fit
 ```
 
-## ContentScale Options
+### ContentScale Options
 
 | Type                      | Description                                  |
 | ------------------------- | -------------------------------------------- |
