@@ -600,3 +600,7 @@ Image(
 | `alignment`          | Image alignment           |
 | `alpha`              | Image transparency        |
 | `colorFilter`        | Apply color effect        |
+
+
+### Check Box
+Check Box is a type of two-state button either unchecked or checked in Android.
