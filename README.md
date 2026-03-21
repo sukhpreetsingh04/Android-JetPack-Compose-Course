@@ -30,13 +30,13 @@ We will learn:
     (b) Powerful tools
     (c) Intuitive Kotlin APIs
 
-3. With Jetpack Compose, we no longer need to design UI with XML. We create their views directly within the Kotlin class, just like we write code.
+3. With Jetpack Compose, we no longer need to design UI with XML. UI is created using @Composable functions written in Kotlin, just like we write code.
    
 4. We use Jetpack compose because it allows us to write less code; it is intuitive; it accelerates the development process; it is powerful. 
 
 ## What is Kotlin?
 
-1. It is an Open-source and static language. It takes its name from Kotlin Island, a russain island in the Gulf of Finland.
+1. Kotlin is a statically typed, open-source programming language. It takes its name from Kotlin Island, a russain island in the Gulf of Finland.
 
 2. It supports both object-oriented and functional programming.
  
@@ -374,7 +374,7 @@ Button(onClick = {}) {
 
 ### Text Field
 A **Text Field** in Android is a UI component used to accept text input from the user.  
-In Android, it is mainly implemented using **EditText**.
+In Android, it is mainly implemented using **TextField()**.
 
  1. State Management
 
