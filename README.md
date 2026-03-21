@@ -1,606 +1,307 @@
-# Android-JetPack-Compose-Course
-## What is Android Development?
+# 📱 Android Jetpack Compose Course Notes
 
-Android development is a software creation process that focuses on applications, better known as apps, that are compatible with devices running the Android operating system (OS).
-The Android SDK tools compile your code along with any data and resource files into an APK, or Android package, which is an archive file that uses an .apk suffix.
-One APK file contains all Android app contents used by devices to install your app. When the app is complete and ready for release, Android developers can upload their apps to the Google Play Store for users to download.
+---
 
-## What is Android SDK and why is it important?
+## 📌 1. Introduction to Android Development
 
-1. Android SDK refers to the Android Software Development Kit.
+Android development is the process of building applications (apps) for devices running the Android Operating System (OS).
 
-2. Android SDK is a collection of tools that have been released and supported for the express purpose of creating Android software. Through the Android SDK, programmers can collect, create, and manage their code. It is a comprehensive development environment that is well-supported, not only by the Android team but also by its community.
+* Android apps are packaged as **APK (Android Package)** files
+* APK contains:
 
-## What Will We Learn?
+  * Code
+  * Resources
+  * Assets
 
-We will learn:
+👉 Developers upload APKs to the **Google Play Store** for distribution.
+
+---
+
+## 📦 2. Android SDK (Software Development Kit)
+
+The Android SDK is a collection of tools required to build Android applications.
+
+### Key Points:
+
+* Provides APIs, libraries, and debugging tools
+* Helps in building, testing, and managing apps
+* Fully supported by Google and the developer community
+
+---
+
+## 🎯 3. Course Learning Objectives
+
+In this course, we will learn:
+
 1. Kotlin Programming Language
-2. Android Studio
+2. Android Studio (IDE)
 3. Android Ecosystem
-4. Android Components
-5. Developing Two Android Apps
-6. Publishing Apps on the Google Play Store
+4. Core Android Components
+5. Building Real Android Applications
+6. Publishing Apps on Play Store
 
-## What is Jetpack Compose?
+---
 
-1. It is a toolkit for building native UI.
-   
-2. It simplifies and accelerates UI development with:
-    (a) Less code
-    (b) Powerful tools
-    (c) Intuitive Kotlin APIs
+## 🎨 4. Jetpack Compose
 
-3. With Jetpack Compose, we no longer need to design UI with XML. UI is created using @Composable functions written in Kotlin, just like we write code.
-   
-4. We use Jetpack compose because it allows us to write less code; it is intuitive; it accelerates the development process; it is powerful. 
+Jetpack Compose is a modern toolkit for building native Android UI.
 
-## What is Kotlin?
+### Features:
 
-1. Kotlin is a statically typed, open-source programming language. It takes its name from Kotlin Island, a russain island in the Gulf of Finland.
+* Less code
+* Powerful tools
+* Intuitive Kotlin APIs
 
-2. It supports both object-oriented and functional programming.
- 
-4. It runs on the Java Virtual Machine (JVM).
- 
-5. It's syntax similar to languages such as java, C#, Scala.
+### Key Idea:
 
-## What is Static and Dynamic Language?
-1. Static Programming languages are languages in which variables types determined before runtime (at compile time).
+👉 UI is created using **@Composable functions** in Kotlin
+👉 No need for XML layouts
 
-2. Dynamic Programming languages are languages in which variable types determined at program runtime.
+---
 
+## 💻 5. Kotlin Programming Language
 
-## Kotlin Overview
+Kotlin is a **statically typed, open-source programming language**.
 
-1. Interoperable with Java programming language.
+### Features:
 
-2. You can easily convert between Kotlin and Java codes.
+* Supports OOP + Functional Programming
+* Runs on JVM (Java Virtual Machine)
+* Interoperable with Java
 
-3. There is also an autmatic Java-to-Kotlin converter built into Android Studio.
+### Syntax:
 
-## By Using Kotlin:
+Similar to Java, C#, and Scala
 
-1. Fewer Lines of code
+---
 
-2. Faster compilation
+## ⚖️ 6. Static vs Dynamic Languages
 
-3. Much simpler and more understandable structure.
+* **Static Language:** Variable type is determined at compile time
+* **Dynamic Language:** Variable type is determined at runtime
 
-4. You can develop Web, Desktop and Android Applications wiith Kotlin.
+---
 
-## Basic Programming Terms
+## 🔄 7. Kotlin Overview
 
-1. Package: used to organize classes that belong to the same category or provide related functionality.
+* Fully interoperable with Java
+* Easy conversion between Java ↔ Kotlin
+* Built-in Java-to-Kotlin converter in Android Studio
 
-2. Class: refers to set of related objects with common properties in object oriented programming
+### Advantages:
 
-3. Object: It is a combination of related variables, constants, and other data structure which can be selected and manipulated together.
+* Less code
+* Faster development
+* Clean and readable syntax
+* Supports Web, Desktop, and Android development
 
-4. Object Oriented Programming: It is a model defined by programmers that revolve around objects and data rather than actions and logic.
+---
 
-5. Function or method: It is a block of codes that can be referenced by name to run the code it contains.
+## 🧠 8. Basic Programming Concepts
 
-6. Argument or parameter: It is a value that is passed into a command or a function.
+* **Package:** Organizes related classes
+* **Class:** Blueprint for objects
+* **Object:** Instance of a class (contains properties + functions)
+* **OOP:** Programming based on objects and data
+* **Function:** Reusable block of code
+* **Parameter/Argument:** Value passed to a function
 
-## JDK, JRE and JVM
-<img width="1573" height="925" alt="image" src="https://github.com/user-attachments/assets/cdc2c9e4-574f-4562-9c32-d47bdfd6bae7" />
+---
 
-## Components in JetPack Compose
+## ☕ 9. JDK, JRE, JVM
 
-Components in JetPack Compose are:
+* **JDK:** Development tools
+* **JRE:** Runtime environment
+* **JVM:** Executes Java/Kotlin programs
 
-1. Layout : It is an interface that we use to place android components on the android application. We use layouts to establish components in a particular order. Basically three main layouts are: Column (Vertically aligns), Row (Horizonatally aligns) and Box (Top of one Another aligns).
-   
-2. Arrangements:  Arrangement refers to how child elements are positioned and spaced inside a layout container along its main direction (horizontal in Row and vertical in Column). It controls how space is distributed between and around components.
+---
 
-3. Alignments: Alignment refers to how child elements are placed relative to the cross direction of a layout container (vertical alignment in Row and horizontal alignment in Column). It controls how elements line up perpendicular to the main direction.
+## 🧩 10. Jetpack Compose Fundamentals
 
-### Alignments and Arrangments
+### 🔹 Layouts
 
-#### Row
+Used to arrange UI components:
 
-1. *horizontalArrangement* → controls spacing horizontally
+* **Row** → Horizontal layout
+* **Column** → Vertical layout
+* **Box** → Stack layout (overlapping elements)
 
-2. *verticalAlignment* → controls alignment vertically
+---
 
-#### Column
+### 🔹 Arrangement & Alignment
 
-1. *verticalArrangement* → controls spacing vertically
+👉 **Main Direction = Arrangement**
+👉 **Cross Direction = Alignment**
 
-2. *horizontalAlignment* → controls alignment horizontally
+#### Row:
 
-### Note: Row manages elements horizontally, so it uses horizontal arrangement and vertical alignment. Column manages elements vertically, so it uses vertical arrangement and horizontal alignment.
+* `horizontalArrangement`
+* `verticalAlignment`
 
-## Row Layout Properties
+#### Column:
 
-### horizontalArrangement (Main Direction → Horizontal) : Controls spacing between elements inside a Row.
+* `verticalArrangement`
+* `horizontalAlignment`
 
-1. Arrangement.Start → Items placed at the beginning
+---
 
-2. Arrangement.End → Items placed at the end
+## 📐 11. Row Layout Properties
 
-3. Arrangement.Center → Items placed at the center
+### Horizontal Arrangement:
 
-4. Arrangement.SpaceBetween → Equal space between items, no space at ends
+* Start
+* End
+* Center
+* SpaceBetween
+* SpaceAround
+* SpaceEvenly
 
-5. Arrangement.SpaceAround → Equal space around items (edges get half space)
+### Vertical Alignment:
 
-6. Arrangement.SpaceEvenly → Equal space everywhere (including edges)
+* Top
+* CenterVertically
+* Bottom
 
-### verticalAlignment (Cross Direction → Vertical) : Controls vertical alignment of items inside a Row.
+---
 
-1. Alignment.Top → Align items to top
+## 📐 12. Column Layout Properties
 
-2. Alignment.CenterVertically → Align items in vertical center
+### Vertical Arrangement:
 
-3. Alignment.Bottom → Align items to bottom
+* Top
+* Bottom
+* Center
+* SpaceBetween
+* SpaceAround
+* SpaceEvenly
 
-## Column Layout Properties
+### Horizontal Alignment:
 
-### verticalArrangement (Main Direction → Vertical) : Controls spacing between elements inside a Column.
+* Start
+* CenterHorizontally
+* End
 
-1. Arrangement.Top → Items placed at the top
+---
 
-2. Arrangement.Bottom → Items placed at the bottom
+## ➖ 13. Spacer
 
-3. Arrangement.Center → Items placed at the center
+Spacer is used to create empty space between UI components.
 
-4. Arrangement.SpaceBetween → Equal space between items
+### Types:
 
-5. Arrangement.SpaceAround → Equal space around items
+* Fixed space → `width()`, `height()`, `size()`
+* Flexible space → `weight()`
 
-6. Arrangement.SpaceEvenly → Equal space everywhere
+### Usage:
 
+* Add spacing between elements
+* Push components apart
+* Control layout spacing
 
-### horizontalAlignment (Cross Direction → Horizontal) : Controls horizontal alignment of items inside a Column.
+---
 
-1. Alignment.Start → Align items to left/start
+## 🔘 14. Button in Jetpack Compose
 
-2. Alignment.CenterHorizontally → Align items in horizontal center
+A Button is a clickable UI component used to perform actions.
 
-3. Alignment.End → Align items to right/end
-
-
-## Spacer : What should we do if we want to leave the desired distance between components?
-
-For leaving the desired distance between components, we use a composable function called *spacer*.
-A Spacer is a structure we use to keep distance between components.
-`Spacer` is used to create empty space between UI components inside layouts like `Row`, `Column`, or `Box`.
-
-### Syntax
-```kotlin
-Spacer(modifier = Modifier.size(16.dp))
-```
-
-### Spacer in a Row (Horizontal Row)
-
-```kotlin
-Row {
-    Text("Item 1")
-    
-    Spacer(modifier = Modifier.width(16.dp))
-    
-    Text("Item 2")
-}
-```
-
-Adds horizontal space between components.
-
-### Spacer in Column (Vertical Space)
-
-```kotlin
-Column {
-    Text("Item 1")
-    
-    Spacer(modifier = Modifier.height(16.dp))
-    
-    Text("Item 2")
-}
-```
-
-Adds vertical space between components.
-
-### Spacer Using Weight (Flexible Space)
+### Basic Syntax:
 
 ```kotlin
-Row(modifier = Modifier.fillMaxWidth()) {
-    Text("Start")
-    
-    Spacer(modifier = Modifier.weight(1f))
-    
-    Text("End")
-}
-```
-
-Pushes elements apart by taking remaining space.
-
-### Common Modifier Options
-
-1. Modifier.width() → Controls horizontal spacing
-
-2. Modifier.height() → Controls vertical spacing
-
-3. Modifier.size() → Controls both width and height
-
-4. Modifier.weight() → Takes flexible or remaining space
-
-### When to Use Spacer
-
-1. To add fixed or flexible gaps between UI elements
-
-2. To control layout spacing without using padding
-
-3. To push elements apart dynamically
-
-### Button
-
-1. Button is an android component.
-   
-2. When you click on button, it will do some specific operations.
-
-3. A Button in Jetpack Compose is a clickable UI component used to trigger actions such as submitting data, navigating screens, or performing operations when pressed.
-
-```kotlin
-Button(
-    onClick = { /* Action to perform */ }
-) {
+Button(onClick = { }) {
     Text("Click Me")
 }
 ```
 
-### Button Properties in Jetpack Compose
+### Important Properties:
 
-### onClick (Required)
-Defines the action performed when the button is clicked.
-
-```kotlin
-onClick = { /* Action */ }
-```
-
-- Mandatory property  
-- Accepts a lambda function  
-- Used for navigation, function calls, API calls, etc.
+* `onClick` → Action handler
+* `modifier` → Layout & styling
+* `colors` → Button colors
+* `enabled` → Enable/disable button
+* `shape` → Corner design
+* `elevation` → Shadow
+* `border` → Outline
+* `content` → UI inside button
 
 ---
 
-### modifier
-Used to control layout, styling, and positioning.
+## 📝 15. TextField (User Input)
+
+TextField is used to take input from the user.
+
+### State Management:
 
 ```kotlin
-modifier = Modifier
+var text by remember { mutableStateOf("") }
+```
+
+### Important Properties:
+
+* `value` → Current text
+* `onValueChange` → Updates text
+* `label` → Hint text
+* `modifier` → Layout control
+* `colors` → Styling
+
+---
+
+## 🔄 16. Recomposition (Very Important)
+
+When state changes, Compose automatically updates only the affected UI.
+
+👉 No manual UI refresh required
+
+---
+
+## 🧱 17. Modifier System
+
+Modifiers are used to customize UI elements.
+
+### Example:
+
+```kotlin
+Modifier
     .fillMaxWidth()
-    .padding(8.dp)
+    .padding(16.dp)
+    .background(Color.Gray)
 ```
 
-#### Common Uses:
-- `padding()` → Adds spacing  
-- `fillMaxWidth()` → Expands width  
-- `size()` → Sets fixed size  
-- `align()` → Aligns inside parent  
-- `background()` → Adds background styling  
+👉 Modifiers can be chained together
 
 ---
 
-### colors
-Customizes button appearance.
+## 🖼️ 18. Image in Compose
 
-```kotlin
-colors = ButtonDefaults.buttonColors(
-    containerColor = Color.Blue,
-    contentColor = Color.White
-)
-```
+Used to display images from different sources:
 
-#### Parameters:
-- `containerColor` → Background color  
-- `contentColor` → Text/Icon color  
-- `disabledContainerColor` → Background when disabled  
-- `disabledContentColor` → Content when disabled  
+* Drawable resources
+* Bitmap
+* Painter
+* URL (using libraries like Coil)
 
----
+### Important Properties:
 
-### enabled
-Controls whether the button is clickable.
-
-```kotlin
-enabled = true
-```
-
-- `true` → Button is active  
-- `false` → Button is disabled  
+* `painter`
+* `contentDescription`
+* `modifier`
+* `contentScale`
+* `alignment`
 
 ---
 
-### shape
-Defines the corner style of the button.
+## ☑️ 19. CheckBox
 
-```kotlin
-shape = RoundedCornerShape(12.dp)
-```
+A CheckBox is a two-state component:
 
-#### Common Shapes:
-- `RoundedCornerShape`
-- `CircleShape`
-- `CutCornerShape`
+* Checked
+* Unchecked
+
+Used for selections and user input.
 
 ---
 
-### elevation
-Controls shadow depth.
+## 🧠 20. Stateful vs Stateless Composables
 
-```kotlin
-elevation = ButtonDefaults.buttonElevation(
-    defaultElevation = 6.dp
-)
-```
+* **Stateful:** Manages its own state
+* **Stateless:** Receives state from outside
 
----
-
-### border
-Adds border around the button.
-
-```kotlin
-border = BorderStroke(2.dp, Color.Black)
-```
-
----
-
-### interactionSource
-Tracks interaction states like press, hover, and focus.
-
-```kotlin
-interactionSource = remember { MutableInteractionSource() }
-```
-
-*(Used in advanced UI handling)*
-
----
-
-### content
-Defines UI elements placed inside the button.
-
-```kotlin
-Button(onClick = {}) {
-    Text("Click Me")
-}
-```
-
-#### Content Can Include:
-- Text  
-- Icons  
-- Combined layouts (Row, Column, etc.)
-
----
-
-### Text Field
-A **Text Field** in Android is a UI component used to accept text input from the user.  
-In Android, it is mainly implemented using **TextField()**.
-
- 1. State Management
-
-### remember { mutableStateOf("") }
-
-- `remember` stores the value during recomposition.
-- `mutableStateOf("")` creates a mutable state that triggers recomposition when changed.
-- Used to store the current text of the TextField.
-
-Example:
-```kotlin
-val valueOnTextField = remember {
-    mutableStateOf("")
-}
-```
-
-2. value
-- Represents the current text displayed inside the TextField.
-- Must be linked with a state variable.
-- When state changes, UI updates automatically.
-
-Example:
-```kotlin
-value = valueOnTextField.value
-```
-
-3. onValueChange
-- Triggered whenever the user types something.
-- `it` contains the new text.
-- Used to update the state.
-  
-Example:
-```kotlin
-onValueChange = {
-    valueOnTextField.value = it
-}
-```
-
-4. label
-- Displays a floating label inside the TextField.
-- Moves upward when user starts typing.
-
-Example:
-```kotlin
-label = { Text(text = "Enter your name") }
-```
-
-5. modifier
-- Used to modify layout, size, padding, etc.
-- Here, it sets the width to 300dp.
-- Common modifiers:
-1. width()
-2. height()
-3. padding()
-4. fillMaxWidth()
-
-Example:
-```kotlin
-modifier = Modifier.width(300.dp)
-```
-
-6. colors
-- Customizes the color scheme of TextField. 
-- TextField Properties
-
-| Property                | Description                        |
-| ----------------------- | ---------------------------------- |
-| `textColor`             | Color of typed text                |
-| `backgroundColor`       | Background color of TextField      |
-| `focusedLabelColor`     | Label color when focused           |
-| `unfocusedLabelColor`   | Label color when not focused       |
-| `unfocusedIndicatorColor` | Bottom line color when not focused |
-| `focusedIndicatorColor` | Bottom line color when focused     |
-
-Example:
-```kotlin
-colors = TextFieldDefaults.textFieldColors(...)
-```
-
-### Images
-Images are displayed using the Image() composable.
-It is used to show images from:
-1. Drawable resources
-2. Bitmap
-3. Painter Objects
-4. URLs (using libraties like Coil)
-
-#### Syntax
-```kotlin
-Image(
-    painter = painterResource(id = R.drawable.image_name),
-    contentDescription = "Image description"
-)
-```
-
-1. Loading Image from Drawable:
-To display images stored in res/drawable.
-
-```kotlin
-Image(
-    painter = painterResource(id = R.drawable.one),
-    contentDescription = "Sample Image"
-)
-```
-
-painterResource() loads image from drawable folder
-contentDescription is used for accessibility
-
-2. Image Size:
-We can control the image size using Modifier.
-
-```kotlin
-Image(
-    painter = painterResource(id = R.drawable.one),
-    contentDescription = "Image",
-    modifier = Modifier.size(200.dp)
-)
-```
-
-3. Content Scale:
-conetentScale controls how the image fits inside its container.
-
-example:
-```kotlin
-contentScale = ContentScale.Fit
-```
-
-### ContentScale Options
-
-| Type                      | Description                                  |
-| ------------------------- | -------------------------------------------- |
-| `ContentScale.Fit`        | Image fits inside container without cropping |
-| `ContentScale.Crop`       | Image fills container and crops extra part   |
-| `ContentScale.FillBounds` | Image stretches to fill container            |
-| `ContentScale.Inside`     | Keeps original size if smaller               |
-| `ContentScale.FillWidth`  | Fill width only                              |
-| `ContentScale.FillHeight` | Fill height only                             |
-
-4. Image Alignment:
-Controls position of image inside container.
-
-example:
-```kotlin
-alignment = Alignment.center
-```
-
-Other Alignments:
-
-(a) Alignment.TopStart
-
-(b) Alignment.TopCenter
-
-(c) Alignment.TopEnd
-
-(d) Alignment.CenterStart
-
-(e) Alignment.Center
-
-(f) Alignment.CenterEnd
-
-(g) Alignment.BottomStart
-
-(h) Alignment.BottomCenter
-
-(i) Alignment.BottomEnd
-
-
-5. Changing Image Dynamically:
-We can change images using state variables.
-
-```kotlin
-val myImage = remember {
-    mutableStateOf(R.drawable.Imageone)
-}
-```
-
-Change image on button click:
-
-```kotlin
-myImage.value = R.drawable.images
-```
-
-6. Image with Modifier Examples
-
-  (a) Rounded Image
-
-```kotlin
-modifier = Modifier
-    .size(200.dp)
-    .clip(CircleShape)
-```
-
-  (b) Border Image
-
-```kotlin
-modifier = Modifier
-    .border(2.dp, Color.Black)
-```
-
-  (c) Padding
-
-```kotlin
-modifier = Modifier.padding(16.dp)
-```
-
-7. Image with Bitmap
-
-```kotlin
-Image(
-    bitmap = imageBitmap,
-    contentDescription = "Bitmap Image"
-)
-```
-
-8. Important Parameters of Image()
-
-| Parameter            | Purpose                   |
-| -------------------- | ------------------------- |
-| `painter`            | Image source              |
-| `contentDescription` | Accessibility description |
-| `modifier`           | Size, padding, styling    |
-| `contentScale`       | Image scaling             |
-| `alignment`          | Image alignment           |
-| `alpha`              | Image transparency        |
-| `colorFilter`        | Apply color effect        |
-
-
-### Check Box
-Check Box is a type of two-state button either unchecked or checked in Android.
