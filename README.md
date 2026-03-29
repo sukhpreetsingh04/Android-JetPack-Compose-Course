@@ -300,7 +300,13 @@ Used for selections and user input.
 
 ---
 
-## 🧠 20. Stateful vs Stateless Composables
+## 📌 20. Switch
+
+A Switch in Jetpack Compose is a UI component used to toggle between two states — ON and OFF. It is commonly used in settings screens for enabling or disabling features.
+
+It works using a boolean state (true or false) and updates through the onCheckedChange callback when the user interacts with it.
+
+## 🧠 21. Stateful vs Stateless Composables
 
 * **Stateful:** Manages its own state
 * **Stateless:** Receives state from outside
