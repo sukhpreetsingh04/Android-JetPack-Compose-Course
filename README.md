@@ -306,6 +306,8 @@ A Switch in Jetpack Compose is a UI component used to toggle between two states 
 
 It works using a boolean state (true or false) and updates through the onCheckedChange callback when the user interacts with it.
 
+---
+
 ## 🧠 21. Stateful vs Stateless Composables
 
 * **Stateful:** Manages its own state
