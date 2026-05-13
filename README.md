@@ -315,7 +315,7 @@ It works using a boolean state (true or false) and updates through the onChecked
 
 ---
 
-## 22. DropdownMenu
+##  📌 22. DropdownMenu
 
 `DropdownMenu` is used in Jetpack Compose to display a list of selectable menu items in a popup menu.
 
@@ -329,7 +329,7 @@ It works using a boolean state (true or false) and updates through the onChecked
 
 ---
 
-## 23. DropdownMenuItem
+## 📌 23. DropdownMenuItem
 
 `DropdownMenuItem` represents a single selectable option inside a `DropdownMenu`.
 
