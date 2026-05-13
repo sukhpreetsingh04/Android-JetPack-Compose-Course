@@ -313,3 +313,30 @@ It works using a boolean state (true or false) and updates through the onChecked
 * **Stateful:** Manages its own state
 * **Stateless:** Receives state from outside
 
+## 22. DropdownMenu
+
+`DropdownMenu` is used in Jetpack Compose to display a list of selectable menu items in a popup menu.
+
+### Properties of DropdownMenu
+
+* `expanded` → Controls whether the menu is visible or hidden.
+* `onDismissRequest` → Called when the menu should close (outside click/back press).
+* `modifier` → Used to style or position the menu.
+* `offset` → Changes the menu position relative to its anchor.
+* `properties` → Controls additional popup behavior.
+
+---
+
+## 23. DropdownMenuItem
+
+`DropdownMenuItem` represents a single selectable option inside a `DropdownMenu`.
+
+### Properties of DropdownMenuItem
+
+* `text` → Displays the content/text of the item.
+* `onClick` → Executes when the item is selected.
+* `leadingIcon` → Adds an icon at the start.
+* `trailingIcon` → Adds an icon at the end.
+* `enabled` → Enables or disables item selection.
+* `colors` → Customizes item colors.
+* `contentPadding` → Adjusts spacing inside the item.
