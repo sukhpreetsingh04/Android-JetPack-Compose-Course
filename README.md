@@ -344,3 +344,44 @@ It works using a boolean state (true or false) and updates through the onChecked
 * `contentPadding` → Adjusts spacing inside the item.
 
 ---
+
+## 24. Toast Message
+
+A Toast Message is a small popup message used to show short feedback to the user. It appears for a short time and disappears automatically without user action.
+
+### Properties of Toast Message
+* `context` -> Defines where the Toast will be shown from.
+* "message" -> The text that is displayed inside the Toast.
+* "Duration" -> Defines how long the Toast will be visible.
+* `show()` -> Displays the Toast message on the screen.
+
+---
+
+## 25. Snackbar Message
+
+A Snackbar Message is a message shown at the bottom of the screen to give feedback to the user. It can also include an action button such as Undo, Retry, or Dismiss.
+
+### Properties of Snackbar Message
+* `snackbarHostState` -> Controls and manages the Snackbar message.
+* `SnackbarHost` -> Defines the place where the Snackbar will be displayed.
+* `message` -> The text displayed inside the Snackbar.
+* `actionLabel` -> Adds an action button inside the Snackbar.
+* "duration" -> Defines how long the Snackbar will stay visible.
+* `showSnackbar()` -> Displays the Snackbar message.
+* "CoroutineScope" -> Required because `showSnackbar()` is a suspend function.
+
+---
+
+## 26. Difference between Toast Message and Snackbar Message
+
+| Toast Message               | Snackbar Message                                         |
+| --------------------------- | -------------------------------------------------------- |
+| Shows a small popup message | Shows a message at the bottom of the screen              |
+| Cannot have action button   | Can have action button                                   |
+| Automatically disappears    | Can disappear or wait for user action                    |
+| Simple to use               | Requires Scaffold, SnackbarHostState, and CoroutineScope |
+| Good for small feedback     | Good for important feedback                              |
+| Less interactive            | More interactive                                         |
+| Example: “Copied”           | Example: “Task deleted — Undo”                           |
+
+---
